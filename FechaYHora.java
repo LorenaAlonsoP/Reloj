@@ -26,9 +26,12 @@ public class FechaYHora
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public String getFechaYHora(int y)
+    public String getFechaYHora()
     {
-        // put your code here
-        return
+        return fecha.obtenerFecha() + " / " + hora.getTime();
     }
+    
+    /**
+     * 
+     */
 }
