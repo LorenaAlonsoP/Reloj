@@ -32,6 +32,21 @@ public class FechaYHora
     }
     
     /**
-     * 
+     * Fijar fecha y hora
      */
+    public void fijarFechaYHora(int dias, int meses, int ano, int horas, int minutos) {
+        hora.setTime(horas, minutos);
+        fecha.fijarFecha(dias, meses, ano);
+    }
+    
+    /**
+     * Avanzar fecha
+     */
+    public void avanzarFechaYHora()
+    {
+        hora.timeTick();
+        if (hora.getTime().equals("00:00")) {
+            fecha.avanzarFecha();
+        }
+    }
 }
